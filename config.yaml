@@ -1,0 +1,9 @@
+---
+db_settings:
+  drivername: postgres
+  username:    # User can specify custom username
+  password:    # User can specify custom password
+  host: 127.0.0.1      # Default PostgreSQL host
+  port: 5432              # Default PostgreSQL port
+
+FILE_PATH: # insert path to file here

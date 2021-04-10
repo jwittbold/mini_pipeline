@@ -5,16 +5,14 @@ from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.engine.url import URL
 import pandas as pd
 import sys
+import yaml
 
+with open('config.yaml', 'r') as f:
+    config = yaml.load(f, Loader=yaml.FullLoader)
 
-db_url = {'drivername':'postgres',
-        'username':'',   # User can specify custom username
-        'password':'',   # User can specify custom password
-        'host':'127.0.0.1',      # Default PostgreSQL host
-        'port':5432              # Default PostgreSQL port
-        }
+db_url = config['db_settings']
 
-FILE_PATH = '' #Input path to .csv file
+FILE_PATH = config['FILE_PATH']
 col_names = ('ticket_id', 'trans_date', 'event_id', 'event_name', 'event_date', 'event_type', 'event_city', 'num_tickets', 'price', 'customer_id', 'event_addr')
 df = pd.read_csv(FILE_PATH, sep=',', names=col_names, index_col=False)
 
@@ -100,8 +98,8 @@ def main():
     session.commit()
     session.close()
 
-if __name__ == '__main__':
-    
+if __name__ == '__main__':   
+
     original_stdout = sys.stdout
     with open('stdout_results.txt', 'w') as f:
         sys.stdout = f 
