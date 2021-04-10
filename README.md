@@ -6,7 +6,7 @@ A number of SQL queries are then performed with results saved to a .txt file.
 ## Prerequsites
 Users will first need to have a recent version of Python installed as well as PostgreSQL.
 
-Additionally, users will need to install SQLAlchemy and psycopg2
+Additionally, users will need to install SQLAlchemy and psycopg2:
 
 ```pip install -r requirements.txt```
 
