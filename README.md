@@ -4,7 +4,7 @@ Python program to create a PostgreSQL database and populate it with .csv values.
 A number of SQL queries are then performed.
 
 ## Usage
-This Python script will create a PostgreSQL database and populate it with data found within the included .csv file.
+This Python script will create a PostgreSQL database and populate it with data from the included .csv file.
 
 ## Prerequsites
 Users will first need to have a recent version of Python installed as well as PostgreSQL database.
