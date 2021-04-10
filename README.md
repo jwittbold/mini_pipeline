@@ -1,7 +1,7 @@
 # mini_pipeline
 A Python program to create a PostgreSQL database and populate it with .csv values. 
 
-A number of SQL queries are then performed with results saved to .txt file.
+A number of SQL queries are then performed with results saved to a .txt file.
 
 ## Prerequsites
 Users will first need to have a recent version of Python installed as well as PostgreSQL.
