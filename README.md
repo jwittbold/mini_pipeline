@@ -15,7 +15,7 @@ After installing the requirements, users must input their personal settings in t
 ```config.yaml```
 
 ## Usage
-To run the program from within your terminal, navigate to where the directory in which the file is saved and and enter:
+To run the program from within your terminal, navigate to the directory in which the file is saved and and enter:
 
 ```python3 mini_pipeline.py```
 
