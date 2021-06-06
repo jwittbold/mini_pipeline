@@ -26,6 +26,7 @@ The file is:
 ```stdout_results.txt```
 
 contents of ```stdout_results.txt``` will be:
+
 The greatest number of tickets sold for a particular event was 1024
 The ticket prices in descending order are: 89.95, 89.95, 59.34, 43.0, 35.0, 35.0
 Events were held in these distinct locations: Michigan, Carlisle, New York, Washington DC
